@@ -1,1 +1,2 @@
 tracks_features.csv filter=lfs diff=lfs merge=lfs -text
+dashboard/tracks_features.csv filter=lfs diff=lfs merge=lfs -text

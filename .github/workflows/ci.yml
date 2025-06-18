@@ -27,5 +27,5 @@ jobs:
       - name: Run Django tests
         run: |
           python manage.py test
--       name: Build Docker image
+      - name: Build Docker image
         run: docker build -t my-spotify-dashboard .

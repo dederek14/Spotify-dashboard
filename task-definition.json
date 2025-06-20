@@ -1,0 +1,22 @@
+{
+    "family": "spotify-dashboard-task",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+      {
+        "name": "spotify-container",
+        "image": "dederek14/my-spotify-dashboard:latest",
+        "essential": true,
+        "portMappings": [
+          {
+            "containerPort": 8000,
+            "hostPort": 8000,
+            "protocol": "tcp"
+          }
+        ]
+      }
+    ],
+    "requiresCompatibilities": ["FARGATE"],
+    "cpu": "512",
+    "memory": "1024"
+  }
+  
